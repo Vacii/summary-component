@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="../dist/output.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-HankenGrotesk">
+  <div id="main" class="h-full font-bold md:flex md:items-center">
+    <div id="wrapper" class="flex flex-col h-full md:h-auto md:m-auto md:flex-row md:justify-center md:rounded-3xl md:shadow-2xl">
+    <!-- RESULT -->
+    <div id="result" class="flex flex-col justify-around text-center text-white w-full md:w-80 h-[45%] md:h-[520px] rounded-b-[2.5rem] md:my-auto md:rounded-3xl"
+        style="background: linear-gradient(
+          180deg,
+          hsl(252, 100%, 67%),
+          hsl(241, 81%, 54%) 100%
+        );">
+        <h2 class="text-xl text-[#c8c7ff] pt-2">Your Result</h2>
+        <div class="flex flex-col justify-center mx-auto w-36 h-36 rounded-full"
+        style="background: linear-gradient(
+          180deg,
+          hsla(256, 72%, 46%, 1),
+          hsla(241, 72%, 46%, 0) 100%
+        );">
+          <h1 class="font-extrabold text-6xl">76</h1>
+          <p class="text-[#c8c7ff] opacity-50">of 100</p>
+        </div>
+        <div class="pb-8 max-w-[17rem] mx-auto">
+          <h2 class="text-3xl pb-2">Great</h2>
+          <p class="text-[#c8c7ff]">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+    </div>
+
+    <!-- SUMMARY -->
+    <div id="summary" class="px-8 h-[55%] md:h-[520px] w-full md:w-96 font-bold md:my-auto">
+      <p class="py-4 text-xl text-[#303b5a] text-left">Summary</p>
+      <div class="flex flex-col justify-around w-full h-[80%] text-center">
+        <div class="w-full h-14 flex justify-between items-center text-center rounded-xl bg-[#ff5757] bg-opacity-[5%]">
+          <div class="flex text-center items-center pl-4 gap-3">
+            <img src="../assets/images/icon-reaction.svg" />
+            <p class="font-extrabold text-[#ff5757] text-opacity-70">Reaction</p>
+          </div>
+          <div class="flex justify-center pr-4 gap-2">
+            <p class="opacity-70 font-extrabold">80 </p>
+            <p class="opacity-50 font-extrabold">/ 100</p>
+          </div>
+        </div>
+        
+
+        <div class="w-full h-14 flex justify-between items-center text-center rounded-xl bg-[#ffb01f] bg-opacity-[5%]">
+          <div class="flex text-center items-center pl-4 gap-3">
+            <img src="../assets/images/icon-memory.svg" />
+            <p class="font-extrabold text-[#ffb01f] text-opacity-70">Memory</p>
+          </div>
+          <div class="flex justify-center pr-4 gap-2">
+            <p class="opacity-70 font-extrabold">92 </p>
+            <p class="opacity-50 font-extrabold">/ 100</p>
+          </div>
+        </div>
+
+
+        <div class="w-full h-14 flex justify-between items-center text-center rounded-xl bg-[#00bd91] bg-opacity-[5%]">
+          <div class="flex text-center items-center pl-4 gap-3">
+            <img src="../assets/images/icon-verbal.svg" />
+            <p class="font-extrabold text-[#00bd91] text-opacity-70">Verbal</p>
+          </div>
+          <div class="flex justify-center pr-4 gap-2">
+            <p class="opacity-70 font-extrabold">61 </p>
+            <p class="opacity-50 font-extrabold">/ 100</p>
+          </div>
+        </div>
+
+        <div class="w-full h-14 flex justify-between items-center text-center rounded-xl bg-[#1125d4] bg-opacity-[5%]">
+          <div class="flex text-center items-center pl-4 gap-3">
+            <img src="../assets/images/icon-visual.svg" />
+            <p class="font-extrabold text-[#1125d4] text-opacity-70">Visual</p>
+          </div>
+          <div class="flex justify-center pr-4 gap-2">
+            <p class="opacity-70 font-extrabold">72 </p>
+            <p class="opacity-50 font-extrabold">/ 100</p>
+          </div>
+        </div>
+
+        <button class="w-full h-14 mt-5 md:mt-7 mx-auto text-white bg-[#303b5a] rounded-full hover:bg-gradient-to-b hover:from-[#7857ff] hover:to-[#2e2be9]">
+        Continue
+      </button>
+      </div>
+      <div class="attribution md:hidden">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Lukáš Václavek</a>.
+      </div>
+    </div>
+  </div>
+  <div class="attribution invisible md:visible md:fixed md:bottom-10 md:left-1/2 md:translate-x-[-50%]">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lukáš Václavek</a>.
+  </div>
+  </div>
+</body>
+</html>
